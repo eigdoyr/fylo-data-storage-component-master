@@ -1,0 +1,41 @@
+:root {
+  --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --darker-blue: hsl(229, 57%, 11%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  color: white;
+  background-image: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--darker-blue);
+}
+
+.card {
+  background-color: var(--dark-blue);
+}
