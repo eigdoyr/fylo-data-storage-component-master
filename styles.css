@@ -153,3 +153,22 @@ progress {
 .memory-left p:nth-child(2) {
   font-size: 0.75rem;
 }
+
+@media (width>=768px) {
+  body {
+    background-image: url(./images/bg-desktop.png);
+    background-position: bottom;
+  }
+
+  .fylo-storage {
+    flex-direction: row;
+  }
+
+  .storage-folders {
+    width: 25vw;
+  }
+
+  .storage-memory {
+    width: 25vw;
+  }
+}
