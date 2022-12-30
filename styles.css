@@ -133,6 +133,7 @@ progress {
   background-color: hsl(0, 0%, 100%);
   color: var(--darker-blue);
   width: 11rem;
+  height: auto;
   border-radius: 1em;
   left: 0;
   right: 0;
@@ -154,7 +155,7 @@ progress {
   font-size: 0.75rem;
 }
 
-@media (width>=768px) {
+@media (width>=1024px) {
   body {
     background-image: url(./images/bg-desktop.png);
     background-position: bottom;
@@ -165,10 +166,35 @@ progress {
   }
 
   .storage-folders {
-    width: 25vw;
+    width: 350px;
+    position: relative;
+    bottom: 50px;
   }
 
   .storage-memory {
-    width: 25vw;
+    width: 500px;
+    height: 160px;
+  }
+
+  .memory-left-container {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      100% 75%,
+      100% 100%,
+      84% 75%,
+      0% 75%
+    );
+
+    height: 100px;
+    width: 150px;
+    position: relative;
+    bottom: 200px;
+    left: 120px;
+  }
+
+  .memory-progress::after {
+    margin-left: 292px;
   }
 }
